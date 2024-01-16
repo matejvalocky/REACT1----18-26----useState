@@ -40,10 +40,15 @@ const Example = () => {
        
     }
 
+    const button2Handler = () => {
+        setTitle("opäť zmenený title")
+    }
+
     return (
         <div>
             <h2>{title}</h2>
             <button onClick={buttonHandler}>Zmeniť title</button>
+            <button onClick={button2Handler}>Opäť zmeniť title</button>
         </div>
     )
 }

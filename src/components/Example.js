@@ -5,9 +5,9 @@ import { useState } from "react"
 
 
 const Example = () => {
-    console.log("TEST")
-    
+   
     const [title, setTitle] = useState("Môj prvý title")
+    const [buttonText, setButtonText]  = useState("pôvodny text tlačidla")
     
 
 
@@ -48,12 +48,18 @@ const Example = () => {
         setTitle("")
     }
 
+
+    const buttonChange = () => {
+        setButtonText("nový text tlačídla")
+    }
+
     return (
         <div>
             <h2>{title}</h2>
             <button onClick={buttonHandler}>Zmeniť title</button>
             <button onClick={button2Handler}>Opäť zmeniť title</button>
             <button onClick={deleteTitle}>vymaž title</button>
+            <button onClick={buttonChange}>{buttonText}</button>
         </div>
     )
 }

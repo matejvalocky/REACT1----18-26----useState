@@ -54,7 +54,7 @@ const Example = () => {
     }
 
     return (
-        <div>
+        <div className='text-button-changer'>
             <h2>{title}</h2>
             <button onClick={buttonHandler}>Zmeniť title</button>
             <button onClick={button2Handler}>Opäť zmeniť title</button>

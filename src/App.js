@@ -3,7 +3,7 @@ import Example from './components/Example'
 
 const App = () => {
   return (
-    <div>
+    <div className='changer'>
       <Example />
     </div>
   )

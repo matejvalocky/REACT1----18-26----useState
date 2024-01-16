@@ -1,0 +1,11 @@
+body {
+  background-color: #011526;
+}
+
+.changer {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

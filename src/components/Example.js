@@ -2,11 +2,18 @@ import React from 'react'
 import "./Example.css"
 
 const Example = () => {
-  return (
-    <div>
-        <h1>Nič moc</h1>
-    </div>
-  )
+    let title = "Môj prvý title"
+
+    const buttonHandler = () => {
+        console.log("kliknuté")
+    }
+
+    return (
+        <div>
+            <h2>{title}</h2>
+            <button onClick={buttonHandler}>Zmeniť title</button>
+        </div>
+    )
 }
 
 export default Example

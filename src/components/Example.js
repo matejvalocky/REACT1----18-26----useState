@@ -1,10 +1,20 @@
 import React from 'react'
 import "./Example.css"
+import { useState } from "react"
+
+
 
 const Example = () => {
+    console.log("TEST")
+    
+    const [title, setTitle] = useState("Môj prvý title")
+    
+
+
+
+
+
     // čisty javascript začiatok
-
-
 
     const vychodziePolie = ["David", "Hermiona", "Harry"]
 
@@ -14,25 +24,20 @@ const Example = () => {
 
         // DESTRUCTURING
 
-        const [student1, student2, student3] = vychodziePolie
+        // const [student1, student2, student3] = vychodziePolie
 
-        console.log(student1)
-        console.log(student2)
-        console.log(student3)
-
-
-
-
-
+        // console.log(student1)
+        // console.log(student2)
+        // console.log(student3)
 
     // čisty javascript koniec
 
 
-    let title = "Môj prvý title"
+  
 
     const buttonHandler = () => {
-        title = "novy text v titlu"
-        console.log(title)
+        setTitle("Novy text v titlu")
+       
     }
 
     return (
